@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.hp.moneda.Calculadora"
+    android:background="@mipmap/fondo5"
+    >
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/entrada"
+
+
+        android:hint="Ingresa la 1° cantidad"
+        android:textColorHint="#CFCFCF"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/entrada2"
+        android:hint="Ingresa la 2° cantidad"
+        android:textColorHint="#CFCFCF"
+        android:layout_below="@+id/entrada"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="45dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bsumar"
+        android:text="@string/sumar"
+        android:layout_marginLeft="90dp"
+        android:layout_marginStart="61dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resta"
+        android:id="@+id/brestar"
+        android:layout_alignTop="@+id/bsumar"
+        android:layout_toRightOf="@+id/bsumar"
+        android:layout_toEndOf="@+id/bsumar"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/multiplicacion"
+        android:id="@+id/bmultiplicar"
+        android:layout_below="@+id/bsumar"
+        android:layout_alignLeft="@+id/bsumar"
+        android:layout_alignStart="@+id/bsumar"
+        android:layout_marginTop="39dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/division"
+        android:id="@+id/bdividir"
+        android:layout_alignTop="@+id/bmultiplicar"
+        android:layout_alignLeft="@+id/brestar"
+        android:layout_alignStart="@+id/brestar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/resultadocalc"
+        android:textSize="25dp"
+        android:layout_marginBottom="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/bmultiplicar"
+        android:layout_alignStart="@+id/bmultiplicar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Seleccione la operacion"
+        android:id="@+id/textView8"
+        android:layout_above="@+id/bsumar"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Calculadora  -Operaciones Basicas-"
+        android:id="@+id/textView9"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
+
